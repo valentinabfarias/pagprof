@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Import da fonte Poppins */
+
+body {
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Define a cor de todos os elementos textuais */
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+header {
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1.25em;
+    margin: 0 16px;
+    transition: all 0.2s;
+}
+
+header #header-titulo {
+    position: absolute;
+    left: 16px;
+    font-size: 2em;
+}
+
+header span {
+    color: #00e846;
+}
+
+main {
+    margin: 32px 0;
+}
+
+footer {
+    background-color: #171717;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* -------------------------- h3---------------------------------- */
+
+
+.footer-h3 {
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* --------------------------Button---------------------------------- */
+
+
+.footer-button {
+    background-color: #00e846;
+    font-size: 1.5em;
+    padding: 3px;
+    cursor: pointer;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    border: none;
+}
+
+/* --------------------------Div pai dos elementos inferiores ao button---------------------------------- */
+
+
+.footer-inferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+/* --------------------------Área desenvolvedores---------------------------------- */
+
+.footer-equipe-grid {
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 5px;
+    padding-left: 25%;
+    padding-top: 15px;
+}
+
+.footer-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 80px;
+}
+
+/* --------------------------Área quem somos--------------------------------- */
+
+
+.footer-quem-somos {
+    display: grid;
+
+}
+
+
+.footer-quem-somos p {
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* --------------------------Área lista---------------------------------- */
+
+
+.footer-lista {
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.footer-lista li {
+    list-style: none;
+}
+
+.footer-lista li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-lista li a:hover {
+    text-decoration: none;
+    color: #00e846;
+}
+
+/* --------------------------------- Estilo dos (H) ---------------- */
+
+.h2-topico {
+    width: 50%;
+    background-color: #00e846;
+    font-size: 1.5em;
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+.h3-subtopico {
+    width: 30%;
+    background-color: #171717;
+    font-size: 1.0em;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* -------------------------------------- Profissao Habilidades -------------------------------- */
+
+
+#habilidades p {
+    margin-left: 20px;
+    font-size: 1.18em;
+    margin-bottom: 3%;
+    padding: 0 48px;
+}
+
+.habilidades-b {
+    color: #00e846;
+}
+
+.habilidades-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.habilidades-container-item {
+    background-color: #171717;
+    width: 50%;
+    margin: 15px;
+}
+
+.habilidades-container-item h4 {
+    text-align: center;
+}
+
+.habilidades-container-item ul {
+    padding: 15px;
+    padding-top: 0;
+}
+
+.habilidades-container-item ul li {
+    color: #fff;
+}
+
+/* -------------------------------------- FIM Profissao Habilidades -------------------------------- */
+
+#formacao {
+
+    h2 {
+        width: 50%;
+        background-color: #00e846;
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+
+    .cursos-container {
+        h3 {
+            width: 30%;
+            background-color: #171717;
+            margin-top: 0;
+            font-size: 1.0em;
+        }
+
+        .cursos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 16px;
+        }
+
+        .curso {
+            height: 128px;
+            margin-bottom: 16px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 16px;
+            padding: 0 16px;
+
+            img {
+                height: 128px;
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .text {
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------ quem é --------------------------------------------------------------------------------------- */
+
+#quem-e {
+    h1 {
+        margin-right: 40%;
+        background-color: #00e846;
+        font-weight: 600;
+        font-style: normal;
+        width: 60%;
+        margin-bottom: 0;
+        font-size: 2.5em;
+    }
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40%;
+        background-color: #171717;
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.18em;
+        margin-bottom: 3%;
+        padding: 0 48px;
+
+    }
+
+}
+
+.quem {
+    width: 30%;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ fim quem é --------------------------------------------------------------------------------------- */
+
+h5 {
+    text-align: center;
+    font-size: 1.5.5em;
+
+}
+
+a{
+    text-decoration: none;
+   
+    background-color: #00e846;
+    color: #000000;
+    transition: 0.2s all;
+
+    border-radius: 8px;
+    padding: 3px;
+}
+
+a:hover{
+    background-color: #00b737;
+}
